@@ -5,7 +5,6 @@ import sqlite3
 
 root = Tk()
 root.title('Inventory')
-root.iconbitmap('c:/Users/Anarch3/Pictures/pics/anarchylogo.ico')
 root.geometry("400x500")
 
 # Info entries
@@ -127,7 +126,6 @@ def edit():
     global editor
     editor = Tk()
     editor.title('Editor')
-    editor.iconbitmap('c:/Users/Anarch3/Downloads/anarchylogo.ico')
     editor.geometry("400x500")
     connection = sqlite3.connect('cars.db')
     c = connection.cursor()
